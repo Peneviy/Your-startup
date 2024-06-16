@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Geologica';
+    src: url('/assets/fonts/Geologica/Geologica.ttf');
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('/assets/fonts/Unbounded/Unbounded.ttf');
+}
+
+@font-face {
+    font-family: "Geologica";
+    src: url('/assets/fonts/Geologica/static/Geologica-Bold.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Geologica";
+    src: url('/assets/fonts/Geologica/static/Geologica-Regular.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    src: url('/assets/fonts/Geologica/static/Geologica-Light.ttf');
+    font-family: "Geologica";
+    font-style: normal;
+    font-weight: 200;
+}
+
+:root {
+    --black: #373737;
+    --accent: #7C4DFF;
+    --light-accent: #D0BFFF;
+    --light-gray: #F3F0F0;
+    --dark-gray: #BBBBBB;
+    --gray: #DFDFDF;
+    --red: #E32E2E;
+    --yellow: #FFCD3B;
+    --white: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF;
+    color: #101014;
+    font-family: 'Geologica';
+    font-size: 30px;
+    font-weight: 250;
+    color: var(--black);
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1880px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Unbounded';
+    color: var(--black);
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+}
+
+h1 {
+    font-size: 110px;
+    line-height: 130px;
+}
+
+h2 {
+    font-size: 80px;
+    line-height: 100px;
+}
+
+h3 {
+    font-size: 60px;
+    line-height: 70px;
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+h5 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+
+
+button:disabled {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+img {
+    pointer-events: none;
+}
+
+p {
+    font-family: 'Geologica';
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 35px;
+    margin: 0px;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+main {
+    padding: 150px 0px;
+}
+
+.n-drawer .n-drawer-content .n-drawer-body-content-wrapper,
+.n-drawer .n-drawer-content .n-drawer-header {
+    padding: 10px;
+}
+
+.n-drawer {
+    padding: 40px;
+}
+
+.n-scrollbar > .n-scrollbar-rail.n-scrollbar-rail--vertical > .n-scrollbar-rail__scrollbar {
+    z-index: 2000;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 4px solid transparent;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    h2 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .n-drawer {
+        padding: 20px;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
